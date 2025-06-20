@@ -1,0 +1,49 @@
+{
+  "target_scene_path": "scenes/laboratorio_automatizzato.tscn",
+  "nodes": [
+    {
+      "id": "Laboratorio",
+      "type": "Node2D",
+      "parent": null
+    },
+    {
+      "id": "Background",
+      "type": "Sprite2D",
+      "parent": "Laboratorio",
+      "properties": {
+        "position": { x: 576, y: 324 },
+        "texture_path": "res://assets/laboratorio/bg_laboratorio.png"
+      }
+    },
+    {
+      "id": "Player",
+      "type": "CharacterBody2D",
+      "parent": "Laboratorio",
+      "properties": {
+        "position": { x: 576, y: 324 },
+        "script_path": "res://scripts/personaggio_laboratorio.gd"
+      },
+      "children": [
+        {
+          "id": "PlayerSprite",
+          "type": "Sprite2D",
+          "parent": "Player",
+          "properties": {
+            "texture_path": "res://assets/personaggio/personaggio.png"
+          }
+        },
+        {
+          "id": "PlayerCollision",
+          "type": "CollisionShape2D",
+          "parent": "Player",
+          "properties": {
+            "shape": {
+              "type": "RectangleShape2D",
+              "size": { "x": 32, "y": 32 }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

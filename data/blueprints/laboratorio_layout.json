@@ -1,0 +1,34 @@
+{
+  "scene_root": {
+	"base_nodes": [
+	  {
+		"name": "Background",
+		"type": "TextureRect",
+		"properties": { "z_index": -10 }
+	  },
+	  {
+		"name": "GameUI",
+		"type": "SceneInstance",
+		"path": "res://scenes/ui/GameUI.tscn"
+	  }
+	],
+	"elements": [
+	  {
+		"name": "Automa",
+		"type": "Sprite2D",
+		"texture_export_var": "automa_texture",
+		"position": { "x": 960, "y": 540 },
+		"properties": { "scale": {"x": 0.8, "y": 0.8} }
+	  }
+	],
+	"hotspots": [
+	  {
+		"name": "HotspotAutoma",
+		"type": "Hotspot",
+		"message_id": "automa_descrizione",
+		"position": { "x": 960, "y": 500 },
+		"shape_size": { "width": 200, "height": 400 }
+	  }
+	]
+  }
+}

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvr4d7j3h1k2l"]
+
+[ext_resource type="Script" uid="uid://dpq2tgwx301mj" path="res://scenes/runners/LaboratorioAutonomo.gd" id="1_x5y6z"]
+
+[node name="LaboratorioAutonomo" type="Node2D"]
+script = ExtResource("1_x5y6z")
